@@ -1,6 +1,6 @@
 # VAE-MNIST
 
-This project implements a Variational Autoencoder (VAE) for the MNIST dataset, supporting both fully connected (FNN) and convolutional (CNN) architectures. It includes training, evaluation, and empirical analysis.
+Educational implementation of Variational Autoencoder (VAE) for the MNIST dataset, supporting both fully connected (FNN) and convolutional (CNN) architectures. It includes training, evaluation, and empirical analysis.
 
 ## Features
 - Train VAE models (FNN/CNN) on MNIST
