@@ -1,0 +1,29 @@
+# VAE-MNIST Configuration File
+experiment:
+  name: "VAE_MNIST"
+  version: "_FNN_MSE_SUM"
+  seed: 31
+
+model:
+  input_dim: 784  # 28x28 MNIST images flattened
+  latent_dim: 8  
+  activation: "linear" # sigmoid, (else will be linear)
+
+training:
+  optimizer: "Adam"  # Options: Adam, SGD
+  learning_rate: 0.001  
+  weight_decay: 0.0
+  # momentum: 0.9  # Only used for SGD
+  beta: 1.0
+  beta_warmup_epochs: 20   
+  epochs: 61              
+  batch_size: 100  
+  reduction: "sum"    # Options: sum or mean
+
+data:
+  dataset: "MNIST"
+  
+paths:
+  output_dir: "./experiments"
+  checkpoint_path: null  # Set to path if resuming training
+  

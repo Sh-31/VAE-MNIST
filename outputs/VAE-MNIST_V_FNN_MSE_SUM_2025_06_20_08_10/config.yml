@@ -1,0 +1,22 @@
+data:
+  dataset: MNIST
+experiment:
+  name: VAE_MNIST
+  seed: 31
+  version: _FNN_MSE_SUM
+model:
+  activation: linear
+  input_dim: 784
+  latent_dim: 8
+paths:
+  checkpoint_path: null
+  output_dir: ./experiments
+training:
+  batch_size: 100
+  beta: 1.0
+  beta_warmup_epochs: 20
+  epochs: 61
+  learning_rate: 0.001
+  optimizer: Adam
+  reduction: sum
+  weight_decay: 0.0
